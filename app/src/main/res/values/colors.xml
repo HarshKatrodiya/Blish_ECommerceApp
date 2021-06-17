@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2189c6</color>
+    <color name="colorPrimaryDark">#1082c9</color>
+    <color name="colorAccent">#109bc1</color>
+    <color name="blue">#094d99</color>
+    <color name="nevi_blue">#27bde6</color>
+    <color name="White">#ffffff</color>
+    <color name="Black">#222</color>
+    <color name="red">#f70505</color>
+    <color name="jambli">#760fba</color>
+    <color name="green">#5AE708</color>
+    <color name="gray">#918B8B</color>
+    <color name="profile">#048BB7</color>
+</resources>

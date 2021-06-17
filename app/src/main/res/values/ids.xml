@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="view_order_done_details_cardview_3" type="id" />
+    <item name="view_order_done_details_Billing_Address_TV" type="id" />
+    <item name="view_order_done_details_cardview_4" type="id" />
+    <item name="view_order_done_details_cardview_5" type="id" />
+    <item name="view_order_done_details_user_name_TV" type="id" />
+    <item name="view_order_done_details_cardview_6" type="id" />
+</resources>

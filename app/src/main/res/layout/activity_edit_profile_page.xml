@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Edit_profile_page"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="50dp"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentLeft="true" />
+
+    <ScrollView
+        android:id="@+id/scrolView_account"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/linear_account"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="100dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="100dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="profile Details"
+                        android:textStyle="bold" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textColorHint="@color/blue">
+
+                        <EditText
+                            android:id="@+id/edit_profile_username"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="User Name"
+                            android:imeOptions="actionNext"
+                            android:textColorHint="@color/colorPrimary" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/colorPrimary">
+
+                        <EditText
+                            android:id="@+id/edit_profile_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="E-mail"
+                            android:imeOptions="actionNext"
+                            android:inputType="textEmailAddress"
+                            android:textColorHint="@color/colorPrimary" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/colorPrimary">
+
+                        <EditText
+                            android:id="@+id/edit_profile_mobile_et"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Mobile"
+                            android:inputType="number"
+                            android:layout_marginBottom="10dp"
+                            android:imeOptions="actionNext"
+                            android:textColorHint="@color/colorPrimary" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/colorPrimary">
+
+                        <EditText
+                            android:id="@+id/edit_profile_Address_et"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Address"
+                            android:layout_marginBottom="10dp"
+                            android:imeOptions="actionNext"
+                            android:textColorHint="@color/colorPrimary" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <Button
+                        android:id="@+id/edit_profil_submit_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_margin="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/done_btn"
+                        android:text="Done"
+                        android:textColor="@color/blue"
+                        android:textSize="20dp" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imageview_account_profile"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/account_user_image2"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    app:civ_border_color="#FFFFFF"
+                    app:civ_border_width="2dp" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/floatingActionButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/edit_profilw_image"
+                    android:layout_alignEnd="@+id/imageview_account_profile"
+                    android:layout_alignRight="@+id/imageview_account_profile"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginRight="3dp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

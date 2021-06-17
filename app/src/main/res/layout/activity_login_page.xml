@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/activity_main_Relative_layout"
+        android:layout_width="match_parent"
+        android:padding="15dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/activity_main_page_App_logo"
+            android:src="@drawable/logo_app"
+            android:padding="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/CardView_activity_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:cardCornerRadius="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/activity_main_page_App_logo">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <EditText
+                    android:id="@+id/email_login_page"                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:hint="@string/Email_sign_in"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/common_google_signin_btn_text_light"
+                    android:background="@drawable/shape_login_signin_et"
+                    android:drawableLeft="@drawable/ic_email_black_24dp"
+                    android:layout_below="@id/activity_main_page_App_logo"/>
+
+                <EditText
+                    android:id="@+id/password_login_page"                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:hint="@string/Password_login"
+                    android:inputType="textPassword"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/shape_login_signin_et"
+                    android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
+                    android:textColor="@color/blue"
+                    android:layout_below="@id/email_login_page"/>
+
+                <Button
+                    android:id="@+id/main_Activity_login_btn"                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_login"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/White"
+                    android:layout_below="@id/password_login_page"
+                    android:text="@string/Log_in"
+                    android:layout_marginBottom="25dp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/login-pass_forgot"                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text= "@string/pass_forgate"
+                    android:layout_marginStart="90dp"
+                    android:layout_below="@id/main_Activity_login_btn"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/red"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginBottom="30dp"/>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+    </RelativeLayout>
+
+</ScrollView>

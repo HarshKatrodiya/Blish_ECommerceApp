@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:padding="5dp"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/product_image_home"
+        android:layout_width="150dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/flower_shopbycategory"
+        android:layout_height="200dp"/>
+
+    <TextView
+        android:id="@+id/product_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product_image_home"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/Black"
+        android:text="Product Name"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_below="@id/product_name_tv"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="2dp"
+            android:padding="4dp"
+            android:src="@drawable/rssymbol_black"
+            android:textSize="20dp" />
+
+        <TextView
+        android:id="@+id/product_price_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/Black"
+        android:text="150"/>
+
+        <TextView
+            android:id="@+id/product_realprise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:background="@drawable/cancleprice"
+            android:textColor="@color/Black"
+            android:text="200"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/product_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:textColor="@color/green"
+            android:textSize="15sp"
+            android:text="50"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/green"
+            android:textSize="15sp"
+            android:text="% off"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
+</android.support.v7.widget.CardView>

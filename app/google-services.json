@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "767233476891",
+    "firebase_url": "https://blish-3d2cb.firebaseio.com",
+    "project_id": "blish-3d2cb",
+    "storage_bucket": "blish-3d2cb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:767233476891:android:41e78ee33de176bb",
+        "android_client_info": {
+          "package_name": "com.example.h.blish_onlienflowerandcake"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "767233476891-6r5lm708nc8m7ump7vrhr763d6m01qu1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.h.blish_onlienflowerandcake",
+            "certificate_hash": "5b786e70a4a4135b0d235e669c993159d02e2ffe"
+          }
+        },
+        {
+          "client_id": "767233476891-f123lrld1bht7opkf323asi52o4vpf8m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdxQHHS70SFkZgtkxWQeClQrLDZMpGSfI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "767233476891-f123lrld1bht7opkf323asi52o4vpf8m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

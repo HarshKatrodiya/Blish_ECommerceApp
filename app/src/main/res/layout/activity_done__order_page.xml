@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Done_Order_page">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.v7.widget.CardView
+            app:cardCornerRadius="2dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/view_order_done_details_cardview_1">
+            <LinearLayout
+                android:id="@+id/view_order_done_details_main_Relative_layout"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_weight="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/view_order_done_details_order_id"
+                            android:textColor="@color/Black"
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:layout_centerHorizontal="true"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:text="Order id"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/view_order_done_details_order_Price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Order total"
+                            android:textSize="20dp"
+                            android:textColor="@color/Black"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_centerHorizontal="true"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:layout_below="@+id/view_order_done_details_order_id"
+                            tools:ignore="DuplicateIds" />
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/view_order_done_details_product_id"
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:textColor="@color/Black"
+                            android:layout_centerHorizontal="true"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:text="404-5685948-356"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/view_order_done_details_product_id"
+                            android:layout_centerInParent="true"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/rssymbol_black"
+                                android:padding="5dp"/>
+
+                        <TextView
+                            android:id="@+id/view_order_done_details_product_Total_Price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="5000"
+                            android:textSize="20dp"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/Black"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="10dp"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:layout_below="@+id/view_order_done_details_product_rating"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view_order_done_details_cardview_1"
+            android:layout_margin="10dp"
+            android:textSize="20dp"
+            android:text="Shipping Details"
+            android:textColor="@color/Black"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:id="@+id/view_order_done_details_shipping_details_TV"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/done_order_rv"
+            android:layout_below="@+id/view_order_done_details_shipping_details_TV"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            tools:listitem="@layout/done_order_page_rowlayout">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/view_order_done_details_page_Payment_details_TV"
+            android:layout_below="@+id/done_order_rv"
+            android:text="Payment information"
+            android:layout_margin="10dp"
+            android:textSize="20dp"
+            android:textColor="@color/Black" />
+
+        <android.support.v7.widget.CardView
+            app:cardCornerRadius="2dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/view_order_done_details_cardview_3"
+            android:layout_below="@+id/view_order_done_details_page_Payment_details_TV">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Black"
+                android:textSize="20dp"
+                android:text="Billing Address"
+                android:layout_margin="10dp"
+                android:id="@+id/view_order_done_details_Billing_Address_TV"/>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            app:cardCornerRadius="2dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/view_order_done_details_cardview_4"
+            android:layout_below="@+id/view_order_done_details_cardview_3"
+            android:layout_marginTop="1dp">
+
+            <RelativeLayout
+                android:id="@+id/Billing_address_cardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/view_order_done_details_page_Payment_details_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view_order_done_details_cardview_4"
+                    android:layout_margin="10dp"
+                    android:text="User Email"
+                    android:textColor="@color/Black"
+                    android:textSize="15dp"
+                    tools:ignore="NotSibling" />
+
+
+                <TextView
+                    android:id="@+id/view_order_done_details_page_Payment_details_mobile_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view_order_done_details_page_Payment_details_email"
+                    android:layout_margin="10dp"
+                    android:text="user mobile"
+                    android:textColor="@color/Black"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/view_order_done_details_page_Payment_details_User_Address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view_order_done_details_page_Payment_details_mobile_number"
+                    android:layout_margin="10dp"
+                    android:text="Address"
+                    android:textColor="@color/Black"
+                    android:textSize="15dp" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".product_all_details">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/activity_click_alldetail_order_page_cardview_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:id="@+id/Category_list_main_Relative_layout"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/flower_shopbycategory"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/Category_list_product_name"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:layout_centerHorizontal="true"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:text="Product name"/>
+
+                    <TextView
+                        android:id="@+id/Category_list_product_rating"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:layout_centerHorizontal="true"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:text="Rating_Product"
+                        android:layout_below="@id/Category_list_product_name"/>
+
+                    <TextView
+                        android:id="@+id/Category_list_product_Price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$1000"
+                        android:textSize="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:layout_below="@id/Category_list_product_rating"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/activity_click_alldetail_order_page_cardview_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        android:layout_below="@id/activity_click_alldetail_order_page_cardview_1"
+        android:layout_marginTop="15dp">
+
+        <LinearLayout
+            android:id="@+id/activity_order_page_addtocart_buynow_btn"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <Button
+                    android:background="@color/White"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="description" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <Button
+                    android:background="@color/White"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="specification" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <Button
+                    android:background="@color/White"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="more info" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:weightSum="3"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_weight="1"
+    android:layout_height="50dp"
+    tools:context=".Rating_screen">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/Activity_rating_page_TV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Give us a Review..."
+                    android:textSize="20sp" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Activity_rating_page_TV"
+                    android:textColorHint="@color/colorPrimary">
+
+                    <EditText
+                        android:id="@+id/review_page_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Activity_rating_page_TV"
+                        android:layout_margin="10dp"
+                        android:hint="Your Review" />\
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:id="@+id/Activity_Rating_page_Done"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/et"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/btn_signin"
+                    android:text="Done"
+                    android:textColor="@color/White"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+</RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/reviewpage_rv_"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/row_layout_review"></android.support.v7.widget.RecyclerView>
+</LinearLayout>

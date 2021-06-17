@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="5dp"
+            android:layout_margin="10dp">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="In the Packet"
+                        android:layout_column="5"
+                        android:layout_marginRight="20dp">
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/In_the_Packet_specification_details_page"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Red Rose with Red Ribbon"
+                        android:layout_column="5"
+                        android:textStyle="bold">
+                    </TextView>
+                </TableRow>
+
+                <View android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray"
+                    android:layout_marginHorizontal="10dp"/>
+
+                <TableRow
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Color"
+                        android:layout_column="5"
+                        android:layout_marginRight="20dp">
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/Color_specification_details_page"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Red"
+                        android:layout_column="5"
+                        android:textStyle="bold">
+                    </TextView>
+                </TableRow>
+
+                <View android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray"
+                    android:layout_marginHorizontal="10dp"/>
+                <TableRow
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Type"
+                        android:layout_column="5"
+                        android:layout_marginRight="20dp">
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/Type_specification_details_page"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rose"
+                        android:layout_column="5"
+                        android:textStyle="bold">
+                    </TextView>
+                </TableRow>
+
+                <View android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray"
+                    android:layout_marginHorizontal="10dp"/>
+
+
+                <TableRow
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Weight"
+                        android:layout_column="5"
+                        android:layout_marginRight="20dp">
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/Weight_specification_details_page"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="100g"
+                        android:layout_column="5"
+                        android:textStyle="bold">
+                    </TextView>
+                </TableRow>
+
+                <View android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray"
+                    android:layout_marginHorizontal="10dp"/>
+
+
+                <TableRow
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ribbon Color"
+                        android:layout_column="5"
+                        android:layout_marginRight="10dp">
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/Ribbon_color_specification_details_page"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Red"
+                        android:layout_column="5"
+                        android:textStyle="bold">
+                    </TextView>
+                </TableRow>
+
+                <View android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray"
+                    android:layout_marginHorizontal="10dp"/>
+
+
+                <TableRow
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Qty."
+                        android:layout_column="5"
+                        android:layout_marginRight="20dp">
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/flower_qty_specification_details_page"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="10"
+                        android:layout_column="5"
+                        android:textStyle="bold">
+                    </TextView>
+                </TableRow>
+            </TableLayout>
+        </android.support.v7.widget.CardView>
+    </ScrollView>
+
+</RelativeLayout>
